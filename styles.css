@@ -9,6 +9,11 @@ body {
 .container {
     text-align: center;
 }
+
 .container a {
     margin: 10px;
+}
+
+a:link {
+    text-decoration: none; 
 }
