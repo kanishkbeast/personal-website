@@ -3,17 +3,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
 .container {
     text-align: center;
 }
 
-.container a {
-    margin: 10px;
+.container button {
+    margin: 5px 5px;
 }
 
-a:link {
+.container a:link {
     text-decoration: none; 
 }
