@@ -14,11 +14,12 @@
         .container {
             text-align: center;
         }
-        .container button {
-            margin: 5px 5px;
-        }
-        .container a:link {
-            text-decoration: none; 
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; /* Adds space between the dropdown and blog button */
+            margin-top: 10px;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -26,11 +27,20 @@
 </head>
 <body>
     <div class="container">
-        <h3> Hey, I am Kanishk </h3>
-        <a href="https://x.com/kanishk_beast"><button class="btn btn-info">twitter</button></a>
-        <a href="https://www.instagram.com/kanishkbeast"><button class="btn btn-info">instagram</button></a>
-        <a href="https://www.linkedin.com/in/jain-kanishk/"><button class="btn btn-info">linkedin</button></a>
-        <a href="/blog.html"><button class="btn btn-info">blog</button></a>
+        <h3>Hey, I am Kanishk</h3>
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Social Media
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://x.com/kanishk_beast">Twitter</a></li>
+                    <li><a class="dropdown-item" href="https://www.instagram.com/kanishkbeast">Instagram</a></li>
+                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/jain-kanishk/">Linkedin</a></li>
+                </ul>
+            </div>
+            <a href="/blog.html"><button class="btn btn-secondary">blog</button></a>
+        </div>
     </div>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
